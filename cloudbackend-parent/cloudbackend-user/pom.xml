@@ -9,22 +9,26 @@
         <relativePath>../pom.xml</relativePath><!-- lookup parent from repository -->
     </parent>
     <groupId>com.lt.cloud</groupId>
-    <artifactId>cloudbackend-common</artifactId>
+    <artifactId>cloudbackend-user</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>cloudbackend-common</name>
-    <description>公共服务模块</description>
+    <name>cloudbackend-user</name>
+    <description>用户服务模块</description>
 
     <properties>
         <java.version>1.8</java.version>
     </properties>
 
     <dependencies>
-        <dependency>
-            <groupId>com.lt.cloud</groupId>
-            <artifactId>cloudbackend-utils</artifactId>
-        </dependency>
+
     </dependencies>
 
-
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>

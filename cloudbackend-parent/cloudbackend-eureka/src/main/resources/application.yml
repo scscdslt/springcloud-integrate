@@ -1,1 +1,12 @@
+server:
+  port: 8000
 
+eureka:
+  instance:
+    hostname: localhost
+    prefer-ip-address: true
+  client:
+    register-with-eureka: false  #禁止把自己注册作为服务
+    fetch-registry: false         #屏蔽注册信息
+  service-url:
+    defaultZone: http://localhost:8761/eureka/
